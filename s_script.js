@@ -196,9 +196,9 @@ class Game {
 
         //render button
         const newButton = document.createElement("button")
-        if (status === "ready") newButton.textContent = "playing";
+        if (status === "ready") newButton.textContent = "play";
         if (status === "playing") newButton.textContent = "reset";
-        if (status === "won") newButton.textContent = "play play";
+        if (status === "won") newButton.textContent = "play";
 
         newButton.addEventListener("click", () => {
             clearInterval(this.tickId);
